@@ -38,7 +38,7 @@ if __name__ == '__main__':
     for x in range(out_grid.number_columns):
         for y in range(out_grid.number_rows):
             if out_grid.blank_value in data[x][y]:
-                out_grid.data = out_grid.blank_value
+                out_grid.data[x][y] = out_grid.blank_value
             else:
                 value = 0
                 for i in data[x][y]:
